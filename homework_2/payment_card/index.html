@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Payment Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="fadeIn">
+
+      </h1>
+    <div class="large_container">
+        <div class="payment_card flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="payment_card_top_div">
+                        <div class="left_logo">
+                            
+                        </div>
+                        <div class="" id="right_logo">
+                            
+                        </div>
+                    </div>
+                    <div class="card_numbers_div"><span class="span_span">#### #### #### ####</span></div>
+                    <div class="card_name_bottom">
+                        <div class="card_name_container">
+                            <span class="span card_holder_span">Card Holder</span>
+                            <h3 class="card_name_area h3_color" id="card_name_value"></h3>
+                        </div>
+                        <div class="card_date_container">
+                            <span class="span expires_span">Expires</span>
+                            <h4 class="card_date_area h3_color"><span id="month_span">MM</span>/<span  id="year_span">YY</span></h3>
+                            </div>
+                        </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="black_side"></div>
+                    <div class="ccv_side">
+                        <div class="ccv_container">
+                            <span class="ccv_span">CCV</span>
+                        </div>
+                        <div class="white_side"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        <div class="payment_form">
+            <form class="form" action="">
+                <div class="card_number_div form_div">
+                    <label for="card_number" class="label">Card Number</label>
+                    <input maxlength="19" class="card_number_input card_info" type="text" id="card_number">
+                </div>
+                <div class="card_name_div form_div">
+                    <label for="card_name" class="label">Card Name</label>
+                    <input class="card_name_input card_info" type="text" maxlength="28" id="card_name">
+                </div>
+                <div class="form_date_div">
+                    <div class="date_div">
+                        <label class="label" for="month_dropdown">Expiration Date</label>
+                        <select class="dropdown" id="month_dropdown">
+                            <option selected disabled>Month</option>
+                        </select>
+                    </div>
+                    <div class="date_div">
+                        <select class="dropdown" id="year_dropdown">
+                            <option selected disabled>Year</option>
+                        </select>
+                    </div>
+                    <div class="date_div">
+                        <label class="label" for="cvv">CVV</label>
+                        <input type="text" maxlength="4" class="cvv_input" id="cvv">
+                    </div>
+                </div>
+                <div class="form_button_div">
+                    <button class="submit_button" type="button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

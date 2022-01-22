@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="large_div">
+        <form id="formData" action="">
+            <h1>Enter your information</h1>
+            <div class="main_div">
+            <div>
+                <div class="info_div">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name">
+                    <span class="errorMesage error_name"></span>
+                </div>
+                <div class="info_div">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email">
+                    <span class="errorMesage error_email"></span>
+                </div>
+                <div class="info_div">
+                    <label for="phone">Phone</label>
+                    <input  class="form-control" type="number" id="phone" name="phone">
+                    <span class="errorMesage error_phone"></span>
+                </div>
+                <div class="info_div">
+                    <label for="choose-file">Photo</label>
+                    <input maxlength="15" class="form-control" type="file" accept="image/*" id="choose-file" />
+                    <span class="errorMesage error_file"></span>
+                </div>
+                <div class="info_div">
+                    <label for="birthday">Birthday</label>
+                    <input class="form-control" type="date" id="birthday" name="birthday">
+                    <span class="errorMesage error_birthday"></span>
+                </div>
+            </div>
+            <div>
+                <div class="info_div">
+                    <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option disabled selected="selected">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <span class="errorMesage error_gender"></span>
+                </div>
+                <div class="info_div">
+                    <label for="address">Address</label>
+                    <input maxlength="15" class="form-control" type="text" id="address" name="address">
+                    <span class="errorMesage error_address"></span>
+                </div>
+                <div class="info_div">
+                    <label for="city">City</label>
+                    <input maxlength="15" class="form-control" type="text" id="city" name="city">
+                    <span class="errorMesage error_city"></span>
+                </div>
+                <div class="info_div">
+                    <label for="state">State</label>
+                    <input maxlength="15" class="form-control" type="text" id="state" name="state">
+                    <span class="errorMesage error_state"></span>
+                </div>
+                <div class="info_div">
+                    <label for="country">Country</label>
+                    <input maxlength="15" class="form-control" type="text" id="country" name="country">
+                    <span class="errorMesage error_country"></span>
+                </div>
+            </div>
+        </div>
+            <div class="info_div">
+                <input type="submit" id="submit">
+            </div>
+        </div>
+        </form>
+    </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal_div">
+        <h2>Form Data</h2>
+    </div>
+    <div class="form_content">
+        <div class="form_info">
+            <div id="img-preview"></div>
+            <div class="table_info">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,307 @@
+body{
+    background-color: rgb(168, 216, 200);
+}
+.large_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.payment_card{
+    width: 400px;
+    height: 250px;
+    border-radius: 18px;
+    margin-top: 25px;
+    overflow: hidden;
+    z-index: 9999;
+
+}
+.payment_card_top_div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.card_name_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_name_container{
+    width: 75%;
+    height: 60px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+.card_name_area{
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.card_date_area{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.card_date_container{
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+}
+.left_logo{
+    width: 45px;
+    height: 35px;
+    /* border: 1px solid white; */
+    /* background-color: wheat; */
+    background-image: url("emv.png");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+#right_logo{
+    width: 80px;
+    height: 50px;
+    /* border: 1px solid white; */
+    margin-right: 20px;
+}
+.card_numbers_div{
+    width: 85%;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.span{
+    color: white;
+}
+.card_holder_span{
+    padding-left: 10px;
+}
+.expires_span{
+    padding-left: 10px;
+}
+.h3_color{
+    color: white;
+}
+.payment_form{
+    width: 48%;
+    height: 650px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -110px;
+}
+.form{
+    margin-top: 150px;
+    padding: 50px;
+}
+.form_div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.card_info{
+    height: 33px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    padding-left: 20px;
+}
+.card_info:focus{
+    outline: none !important;
+    border:1px solid rgb(51, 151, 197);
+    box-shadow: 0 0 10px #719ECE;
+}
+.form_date_div{
+    width: 100%;
+    display: flex;
+    /* justify-content:% center; */
+    /* align-items: flex-end; */
+}
+.date_div{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.dropdown{
+    width: 160px;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.cvv_input{
+    width: 150px;
+    height: 39px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+.date_div label{
+    margin-bottom: 10px;
+}
+.label{
+    font-family: Noto Sans, sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form_button_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.submit_button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(8, 85, 148);
+    color: white;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card.active .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-image: url("payment_card.jpg");
+    background-size: cover;
+} 
+
+.flip-card-back {
+    background-image: url("payment_card.jpg");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+.black_side{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-top: 30px;
+}
+.white_side{
+    width: 95%;
+    background-color: white;
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+.ccv_side{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ccv_container{
+    width: 95%;
+    text-align: right;
+}
+.ccv_span{
+    color: white;
+}
+.american_express{
+    background-image: url("american_express.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.discover{
+    background-image: url("discover.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.diner{
+    background-image: url("diner.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.mastercard{
+    background-image: url("mastercard.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.jcb{
+    background-image: url("jcb.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.maestro{
+    background-image: url("maestro.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.visa{
+    background-image: url("visa.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.union{
+    background-image: url("UnionPay.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.unknown{
+    background-image: url("unknown.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.active_border{
+    border: 1px solid white;
+}
+
+.ss{
+    font-size: 50px;
+}
+
+
+.aa{
+    opacity: 0;
+    transform: translateY(80px);
+    animation: fadeIn 2s ease-out forwards;
+    display:inline-block;
+  }
+  
+  .aa:nth-of-type(2){
+    animation-delay: 0.5s;
+  }
+  
+  .aa:nth-of-type(3){
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn{
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
