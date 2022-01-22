@@ -193,12 +193,12 @@ input::-webkit-inner-spin-button {
 }
 
 .flip-card-front {
-    background-image: url("payment_card.jpg");
+    background-image: url("images/payment_card.jpg");
     background-size: cover;
 } 
 
 .flip-card-back {
-    background-image: url("payment_card.jpg");
+    background-image: url("images/payment_card.jpg");
     background-size: cover;
     transform: rotateY(180deg);
 }
@@ -231,42 +231,42 @@ input::-webkit-inner-spin-button {
     color: white;
 }
 .american_express{
-    background-image: url("american_express.jpg");
+    background-image: url("images/american_express.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
 .discover{
-    background-image: url("discover.jpg");
+    background-image: url("images/discover.jpg");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .diner{
-    background-image: url("diner.png");
+    background-image: url("images/diner.png");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .mastercard{
-    background-image: url("mastercard.jpg");
+    background-image: url("images/mastercard.jpg");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .jcb{
-    background-image: url("jcb.png");
+    background-image: url("images/jcb.png");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .maestro{
-    background-image: url("maestro.jpg");
+    background-image: url("images/maestro.jpg");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .visa{
-    background-image: url("visa.png");
+    background-image: url("images/visa.png");
     background-size:contain;
     background-repeat: no-repeat;
 }
 .union{
-    background-image: url("UnionPay.png");
+    background-image: url("images/UnionPay.png");
     background-size:contain;
     background-repeat: no-repeat;
 }
